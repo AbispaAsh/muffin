@@ -1,0 +1,62 @@
+.leftUser {
+  display: grid;
+  border-right: 1px solid #dcdcdc;
+  grid-template-rows: 7.3rem 1fr;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 15rem;
+    transition: all 0.4s;
+
+    .MuiSvgIcon-root {
+      fill: grey !important;
+    }
+
+    &:hover,
+    &:active {
+      background-color: rgb(245, 245, 245);
+    }
+
+    &__profilePic {
+      width: 5rem !important;
+      height: 5rem !important;
+    }
+  }
+
+  &__body {
+    padding-top: 6rem;
+    // justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+    padding-top: 0px;
+    color: darkgrey !important;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(77, 77, 77) !important;
+    }
+
+    &--active {
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 2rem;
+      padding-top: 0px;
+      color: $color-black;
+    }
+  }
+}

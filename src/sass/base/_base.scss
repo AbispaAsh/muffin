@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #7d7d7db9 #ffffffa4;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(235, 235, 235, 0.643);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #b1b1b1c5;
+  border-radius: 10px;
+  border: 0px none #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: [side-start] 36rem [side-end full-start] 1fr [full-end];
+  grid-template-rows: 100vh;
+}

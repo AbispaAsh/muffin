@@ -1,0 +1,48 @@
+.login {
+  background-color: $color-secondary;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+
+  &__container {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px;
+    color: $color-black;
+
+    & > button {
+      margin-top: 3rem;
+      text-transform: inherit !important;
+      background-color: white !important;
+      color: grey;
+      font-size: 1.2rem !important;
+      height: 4rem;
+      width: 70%;
+
+      box-shadow: rgba(0, 94, 87, 0.24) 0px 3px 8px;
+
+      &:hover {
+        background-color: rgb(245, 245, 245) !important;
+      }
+    }
+  }
+
+  &__divider {
+    color: #dcdcdc;
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+  &__logo {
+    object-fit: contain;
+    height: 15rem;
+    margin-bottom: 40px;
+  }
+  &__logo-signin {
+    object-fit: contain;
+    height: 2rem;
+    padding-right: 1.6rem;
+  }
+}

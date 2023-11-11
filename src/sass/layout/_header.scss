@@ -1,0 +1,53 @@
+.header {
+  background: rgb(109, 67, 90);
+  background: linear-gradient(
+    40deg,
+    rgba(109, 67, 90, 1) 0%,
+    rgba(166, 82, 102, 1) 10%,
+    rgba(255, 105, 120, 1) 75%,
+    rgba(177, 237, 232, 1) 100%
+  );
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-between;
+  align-items: center;
+
+  .MuiIconButton-root {
+    background-color: rgba($color-primary-dark-1, 0.3);
+  }
+
+  .MuiIconButton-root:hover {
+    background-color: rgba($color-primary-dark-1, 0.1);
+  }
+
+  &__icon {
+    // background-color: rgba($color-primary-dark-1, 0.5) !important;
+    color: #fff !important;
+    padding: 10px !important;
+    margin-left: 1rem !important;
+  }
+
+  &__userProfile {
+    // background-color: rgba($color-primary-dark-1, 0.5);
+    padding: 5px;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: all 0.3s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: rgba($color-primary-dark-2, 0.5);
+    }
+  }
+}
+
+.user__name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #fff;
+}

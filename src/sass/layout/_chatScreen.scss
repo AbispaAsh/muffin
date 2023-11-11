@@ -1,0 +1,112 @@
+.chatScreen {
+  font-size: 1.6rem;
+  &__text {
+    margin-left: 10px;
+    background-color: #29b3cd;
+    padding: 15px;
+    padding-right: 0px;
+    border-radius: 20px;
+    color: white;
+  }
+
+  &__message {
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+  }
+
+  &__timestart {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+  }
+
+  &__text--reciever {
+    margin-left: auto;
+    background-color: lightgray;
+    padding: 15px;
+    padding-right: 0px;
+    border-radius: 20px;
+  }
+
+  &__timestamp {
+    position: relative;
+    top: 13px;
+    left: -5px;
+    padding-right: 5px;
+    font-size: 8px;
+    padding-top: 2rem;
+  }
+
+  &__form {
+    display: flex;
+    padding: 5px;
+    position: fixed;
+    align-items: center;
+    bottom: 0;
+    width: 74vw;
+    height: 5rem;
+    border-top: 1px solid lightgray;
+  }
+
+  &__input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__button {
+    margin-right: 20px;
+    border: none;
+    background-color: white;
+    font-weight: bolder;
+    color: #fe3d71;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 2rem;
+    border-bottom: 1px #eee solid;
+
+    &__userProfile {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 20px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #eee;
+      }
+    }
+
+    &__user__name {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    &__icons {
+      display: flex;
+      padding-right: 1rem;
+    }
+  }
+
+  &__chatbody {
+    height: 85%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__clearSpace {
+    flex: 1 1 0%;
+  }
+}

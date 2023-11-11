@@ -1,0 +1,229 @@
+.profileCard {
+  &:focus {
+    outline: none;
+  }
+  &__container {
+    pointer-events: none;
+    position: relative;
+    /* Firefox */
+    scrollbar-width: auto;
+    scrollbar-color: $color-primary-dark-1 rgba($color-primary, 0.4);
+    scroll-behavior: smooth;
+
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba($color-primary, 0.4);
+      margin-top: 10px;
+      margin-bottom: 50vh;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-primary-dark-1;
+      border-radius: 10px;
+      border: 0px none #ffffff;
+    }
+    background-color: $color-secondary-light-1;
+    display: grid;
+    grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end];
+    grid-auto-rows: 80vh;
+    width: 60vw;
+    overflow: auto;
+    max-width: 85vw;
+    height: 80vh;
+    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    color: $color-black;
+
+    &__loading {
+      background-color: $color-secondary-light-1;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 80vh;
+      width: 60vw;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+    }
+  }
+
+  &__img-1 {
+    grid-column: col1-start / col1-end;
+    object-fit: cover;
+    height: 100%;
+    width: 29.8vw;
+  }
+  &__img-2 {
+    grid-column: col2-start / col2-end;
+    object-fit: cover;
+    height: 100%;
+    width: 29.8vw;
+  }
+  &__img-f {
+    grid-column: col1-start / col2-end;
+    height: 100%;
+    width: 59.6vw;
+    overflow: hidden;
+
+    & img {
+      object-fit: cover;
+      object-position: 50% 0%;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__card-1 {
+    grid-column: col2-start / col2-end;
+    object-fit: cover;
+    height: 100%;
+    width: 29.8vw;
+    padding-top: 30vh;
+    padding-left: 3rem;
+
+    & h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1.4rem;
+    }
+
+    & h3 {
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+    }
+  }
+  &__card-2 {
+    grid-column: col1-start / col2-end;
+
+    position: relative;
+
+    &--center {
+      object-fit: cover;
+      height: auto;
+      width: 59.6vw;
+      padding: 4rem;
+      text-align: center;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    & h3 {
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+
+      & .MuiSvgIcon-root {
+        transform: translateY(25%);
+      }
+    }
+  }
+
+  &__card-3 {
+    grid-column: col2-start / col2-end;
+    object-fit: cover;
+    height: 100%;
+    width: 29.8vw;
+    display: grid;
+    place-items: center;
+    &--center {
+      text-align: center;
+      word-wrap: break-word;
+      width: 29vw;
+      & h3 {
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+      }
+      & p {
+        font-size: 1.8rem;
+      }
+      & .profileCard__infoTag {
+        margin: 5px auto;
+      }
+    }
+  }
+
+  &__card-4 {
+    grid-column: col1-start / col1-end;
+    object-fit: cover;
+    height: 100%;
+    width: 29.8vw;
+    display: grid;
+    place-items: center;
+    &--center {
+      text-align: center;
+      word-wrap: break-word;
+      width: 29vw;
+      & h3 {
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+      }
+      & p {
+        font-size: 1.8rem;
+      }
+      & .profileCard__infoTag {
+        margin: 5px auto;
+      }
+    }
+  }
+
+  &__card-f {
+    grid-column: col1-start / col2-end;
+    object-fit: cover;
+    height: 100%;
+    width: 59.6vw;
+    display: grid;
+    place-items: center;
+    &--center {
+      text-align: center;
+      word-wrap: break-word;
+      width: 58vw;
+      & h3 {
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+      }
+      & p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__about {
+    margin-top: 1rem;
+    word-wrap: break-word;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &__infoTags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.4vw;
+  }
+
+  &__infoTag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-secondary-light-2;
+    width: fit-content;
+    padding: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    & .MuiSvgIcon-root {
+      margin-right: 1rem;
+    }
+  }
+}

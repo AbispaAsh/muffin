@@ -1,0 +1,8 @@
+.right {
+  //   background-color: red;
+  grid-column: full-start / full-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}

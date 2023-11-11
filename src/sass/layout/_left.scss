@@ -1,0 +1,9 @@
+.left {
+  display: grid;
+  grid-template-rows: 7.3rem 4rem 1fr;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

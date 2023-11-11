@@ -1,0 +1,111 @@
+.signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .MuiSvgIcon-root {
+    font-size: 4rem !important;
+    color: #777 !important;
+  }
+  &__logo {
+    margin-top: 2rem;
+  }
+
+  &__action {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & h1 {
+      font-size: 2.4rem;
+    }
+    & > button {
+      margin-top: 3rem;
+      text-transform: inherit !important;
+      background-color: white !important;
+      color: grey;
+      font-size: 1.2rem !important;
+      height: 4rem;
+      width: 70%;
+
+      box-shadow: rgba(0, 94, 87, 0.24) 0px 3px 8px;
+
+      &:hover {
+        background-color: rgb(245, 245, 245) !important;
+      }
+    }
+  }
+
+  &__continue {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    & h2 {
+      font-size: 2rem;
+    }
+    & input {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      width: 80%;
+      border: 1px solid #dcdcdc;
+      padding: 1rem;
+      border-radius: 20px;
+      &:focus {
+        outline: none;
+        border: 1px solid $color-primary;
+      }
+    }
+    &__button {
+      margin-top: 3rem !important;
+      text-transform: inherit !important;
+      background-color: $color-primary !important;
+      color: $color-white !important;
+      font-size: 1.2rem !important;
+      height: 4rem;
+      width: 30%;
+      border-radius: 20px !important;
+
+      box-shadow: rgba(0, 94, 87, 0.24) 0px 3px 8px;
+
+      &:hover {
+        background-color: $color-primary-dark-1 !important;
+      }
+    }
+
+    &__disable {
+      color: darkgrey !important;
+      background-color: #dcdcdc !important;
+    }
+  }
+  &__datePicker {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  &__imagesContainer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+  }
+
+  &__image {
+    display: grid;
+    place-items: center;
+    background-color: #dcdcdc;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+    margin-right: 5px;
+    overflow: hidden;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

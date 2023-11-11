@@ -1,0 +1,78 @@
+.swipeButtons {
+  position: absolute;
+  bottom: 3vh;
+  // left: 63.2vw;
+  width: 100%;
+  // transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .MuiIconButton-root {
+    background-color: white !important;
+    box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3) !important;
+    &:hover {
+      background-color: #f9eeff !important;
+    }
+  }
+
+  &__swipe {
+    transform: translateX(-5%);
+    width: 10vh;
+    min-width: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__left {
+    padding: 2vw !important;
+    color: rgba($color-primary-dark-1, 0.4) !important;
+    // margin-right: 1rem !important;
+    .MuiSvgIcon-root {
+      font-size: 2.5rem !important;
+      stroke: rgba($color-primary-dark-1, 0.4) !important;
+      stroke-width: 2 !important;
+    }
+  }
+  &__right {
+    padding: 2vw !important;
+    color: $color-primary !important;
+    // margin-left: 1rem !important;
+
+    .MuiSvgIcon-root {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  &__report {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem !important;
+    position: relative;
+    top: 2vmax;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 0.3s;
+    color: $color-black;
+
+    &:hover {
+      background-color: rgb(255, 107, 107);
+    }
+  }
+
+  &__instruction {
+    position: relative;
+    top: 2vmax;
+    display: flex;
+    font-size: 1.8rem !important;
+    .MuiSvgIcon-root {
+      background-color: darkgrey;
+      font-size: 1.8rem !important;
+      stroke: rgba($color-primary-dark-1, 0.4) !important;
+      stroke-width: 2 !important;
+      margin-left: 3px !important;
+      border-radius: 3px !important;
+    }
+  }
+}

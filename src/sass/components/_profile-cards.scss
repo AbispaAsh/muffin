@@ -1,0 +1,37 @@
+.profileCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__cardContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+  }
+  &__cardEnd {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35vh;
+    font-size: 4rem;
+    & .MuiSvgIcon-root {
+      align-self: center;
+      font-size: 4rem !important;
+    }
+  }
+
+  &__header {
+    img {
+      margin-top: 2rem;
+      height: 4rem;
+    }
+  }
+}
+
+.swipe {
+  position: absolute;
+}
+
+.cardContent {
+  width: 100%;
+  height: 100%;
+}
